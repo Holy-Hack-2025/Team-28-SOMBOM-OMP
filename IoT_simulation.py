@@ -28,6 +28,6 @@ class IoTDevice:
             print(f"Product {self.product_id} - Location: {status['location']} - Temperature: {status['temperature']:.2f}°C - Battery Health: {status['battery_health']:.2f}%")
             time.sleep(2)  # Simulate data being sent every 2 seconds
 
-# Simulate IoT tracking for a smartphone product
-product_iot_device = IoTDevice("Smartphone_A123")
+# Simulate IoT tracking for a product
+product_iot_device = IoTDevice("Product_A123")
 product_iot_device.send_data()

@@ -22,9 +22,9 @@ class IoTEntry(BaseModel):
 @app.get("/blockchain/", response_model=List[BlockchainEntry])
 async def get_blockchain_log():
     return [
-        {"block": 1, "event": "Smartphone A manufactured", "hash": "0x123abc"},
-        {"block": 2, "event": "Smartphone A shipped to distributor", "hash": "0x456def"},
-        {"block": 3, "event": "Smartphone A returned for recycling", "hash": "0x789ghi"}
+        {"block": 1, "event": "Product A manufactured", "hash": "0x123abc"},
+        {"block": 2, "event": "Product A shipped to distributor", "hash": "0x456def"},
+        {"block": 3, "event": "Product A returned for recycling", "hash": "0x789ghi"}
     ]
 
 @app.get("/sales-prediction/", response_model=List[SalesPrediction])
@@ -40,9 +40,9 @@ async def get_sales_prediction():
 @app.get("/iot-monitoring/", response_model=List[IoTEntry])
 async def get_iot_updates():
     return [
-        {"product": "Smartphone_A123", "location": "Factory", "battery_health": 100},
-        {"product": "Smartphone_A123", "location": "Warehouse", "battery_health": 95},
-        {"product": "Smartphone_A123", "location": "Distributor", "battery_health": 92},
-        {"product": "Smartphone_A123", "location": "Customer", "battery_health": 85},
-        {"product": "Smartphone_A123", "location": "Recycling", "battery_health": 0}
+        {"product": "Product_A123", "location": "Factory", "battery_health": 100},
+        {"product": "Product_A123", "location": "Warehouse", "battery_health": 95},
+        {"product": "Product_A123", "location": "Distributor", "battery_health": 92},
+        {"product": "Product_A123", "location": "Customer", "battery_health": 85},
+        {"product": "Product_A123", "location": "Recycling", "battery_health": 0}
     ]
